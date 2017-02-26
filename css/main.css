@@ -10,6 +10,12 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
 /*************************
  HEADER
  ************************/
@@ -18,25 +24,31 @@ body {
  	text-align: center;
  }
 
- header {
- 	background-color: #37a96d;
- 	margin: 0 0 30px 0;
+ .main-header {
+ 	background-color: #ffffff;
+ 	margin: 0 0 0 0;
  	padding: 5px 0 0 0;
  	overflow: auto;
+ 	position: fixed;
+ 	width: 100%;
+ 	top: 0;
+ 	z-index: 1;
+
  }
 
  h1 {
- 	color: #ffffff;
+ 	color: #37A96D;
  	font-family: 'Candal', sans-serif;
- 	margin: 15px 0;
- 	font-size: 2.1em;
+ 	margin: 8px 0 3px 0;
+ 	font-size: 1.8em;
+
  }
 
  h2 {
- 	color: #ffffff;
+ 	color: #37A96D;
  	font-family: 'Candal', sans-serif;
- margin: 15px 0 20px 0;
- font-size: 1.4em;
+ 	margin: 3px 0 10px 0;
+ 	font-size: 0.9em;
  }
 
 
@@ -54,6 +66,7 @@ body {
  	color: #ffffff;
  	font-weight: bold;
  	padding: 0 2px;
+ 	transition: all 0.8s;
  }
 
  nav ul {
@@ -74,15 +87,37 @@ nav a.selected {
 	color: #27583F;
 }
 
+/*************************
+ BANNER
+ ************************/
+
+.banner {
+	text-align: center;
+	padding: 487px 0 30px 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+				url(../img/background.jpg) no-repeat center / cover;
+
+}
+
+.banner p {
+	font-size: 1.4em;
+	font-family: 'Candal', sans-serif;
+	color: #ffffff;
+}
+
+.arrow {
+	width: 40px;
+}
 
 /*************************
  SECTION
  ************************/
 
-#wrapper {
-	max-width: 940px;
+.wrapper {
+	max-width: 1000px;
 	margin: 0 auto;
-	padding: 0 5% 5px 5%;
+	padding: 40px 5% 40px 5%;
+	box-sizing: border-box;
 }
 
 #gallery {
@@ -102,7 +137,14 @@ img {
 	width: 45%;
 	margin: 2.5%;
 	background-color: #f5f5f5;
+	position: relative;
+	box-shadow: 0px 18px 10px -12px rgba(0, 0, 0, 0.5);
+	transition: all 0.2s;
 
+}
+
+#gallery li:hover {
+	box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 #gallery li a p {
@@ -112,7 +154,12 @@ img {
 	margin: 0;
 }
 
-
+.best {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 50px;
+}
 
 
 
@@ -122,10 +169,11 @@ img {
  FOOTER
  ************************/
 
-footer {
+.main-footer {
 	text-align: center;
 	clear: both;
 	padding: 40px;
+	background-color: #37A96D;
 }
 
 footer p {
@@ -142,11 +190,27 @@ footer p {
  ABOUT
  ************************/
 
+ .container {
+ 	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+				url(../img/picbout.jpg) no-repeat center / cover;
+				background-attachment: fixed;
+ 	padding: 70px 0 50px 0;
+
+ }
+
  .profile-picture {
  	display: block;
  	max-width: 200px;
  	margin: 0 auto 40px;
  	border-radius: 100%;
+ }
+
+ #wrapper section {
+ 	padding-top: 20px;
+ }
+
+ #about p, #about h3 {
+ 	color: #fff;
  }
 
 /*************************

@@ -11,20 +11,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
-		<header>
+		<header class="main-header clearfix">
 			<a href="index.html" id="logo">
 				<h1>Filippo Blasetti</h1>
 				<h2>Musician</h2>
 			</a>
 			<nav>
 				<ul>
-					<li><a href="index.html" class="selected"> Portfolio</a></li>
-					<li><a href="about.html"> About</a></li>
-					<li><a href="contact.html"> Contact</a></li>
+					<li><a href="index.html">Portfolio</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
-		<div id="wrapper">
+			<div class="banner">
+				<p>Check out my Works</p>
+				<img class="arrow" src="img/arrow.png">
+			</div>
+		<div class="wrapper clearfix">
 		<section>
 			<ul id="gallery">
 				<li>
@@ -49,6 +53,7 @@
 					<a href="https://itunes.apple.com/us/album/feet-on-the-roof-ep/id982048077" target="blank">
 						<img src="img/Feet.jpg" alt="Homepage">
 						<p>Feet On The Roof iTunes</p>
+						<img class="best" src="img/best.png">
 					</a>
 				</li>
 				<li>
@@ -59,7 +64,42 @@
 				</li>
 			</ul>
 		</section>
-		<footer>
+		</div>
+					<div class="container" id="about">
+						<div id="wrapper clearfix">
+							<section>
+								<img src="img/toketi.jpg" alt="Profile Picture" class="profile-picture">
+								<h3>About</h3>
+								<p>Born in Trieste (Italy) the 15th of December 1983, starts playing Cello when 4 years old. After a few year shifting from Cello to Violin and Piano, his mother decides to sign him up to a modern keyboard school in Trieste where he enjoys playng simple rock songs until the age of 11.
+								Then he stops playing quite everything until at 16 he decides to buy a guitar, and his adventure begins again. </p>
+								<p>He plays guitar in several Rock bands starting with ThgiLdnAkraD at the Filippin College, and then in SoundRise for nearly four years before getting kicked out for "creative" reasons.</p>
+								<p>The experience of being kicked out from the band makes him quit playing Guitar and approach his beloved Drums.
+								In 2011 he founds with some friends a band called NoLicence and together they record the EP "Feet on the Roof" and the "Give it Up" videoclip.
+								After lots of gigs around, the band loses enthusiasm and stops reharsing, so Filippo decides to start a new challenge.</p>
+								<p>Now he is a Singing student of Maestro Carlo Urizio, and in the last year his vocal abilities are exponentially increased.
+								Happy Days.</p>
+							</section>
+						</div>
+					</div>
+		
+											<div class="wrapper clearfix" id="contact">
+											<section id="info">
+												<h3>Info</h3>
+												<p>To know more about Filippo and his musical life, feel free to contact him.
+												</p>
+												<p>If you want to play your music with Filippo, just write or call him, he will be happy to listen to what you need and he'll try to help, whether you need a Guitar Player, a Drummer, or better, a Singer.</p>
+											</section>
+
+											<section id="contatti">
+												<h3>Contatti</h3>
+												<ul id="contact-info">
+													<li class="phone"><a href="tel:+393495024208">+393495024208</a></li>
+													<li class="mailto"><a href="mailto:filippo.blasetti@gmail.com">filippo.blasetti@gmail.com</a></li>
+													<li class="mailto"><a href="mailto:nolicenceband@gmail.com">nolicenceband@gmail.com</a></li>
+												</ul>
+											</section>
+											</div>
+			<footer class="main-footer">
 			<a href="https://www.facebook.com/filippo.blasetti" target="blank">
 			<img src="img/flogo.png" alt="Logo Facebook" class="icona-social">
 			</a>
@@ -71,6 +111,5 @@
 			</a>
 			<p>&copy; 2017 Filippo Blasetti</p>
 		</footer>
-		</div>
 	</body>
 </html>
